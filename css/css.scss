@@ -1,0 +1,95 @@
+body{
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+@mixin color($color){
+	background-color: $color;
+	padding: 20px 10px;
+	display: grid;
+	grid-template-columns: repeat(2 , 1fr) minmax(100px , 150px);
+	align-items: center;
+}
+.container{
+	max-width: 50%;
+	margin: 0 auto;
+}
+.title{
+	font-size: 25px;
+	font-weight: 600;
+	white-space: nowrap;
+	word-wrap: break-word;
+	text-align: center;
+}
+.time{
+	font-size: 13px;
+	width: 150px;
+	margin: 0 auto;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: capitalize;
+}
+.year{
+	font-size: 60px;
+	font-weight: 600;
+}
+.subtitle{
+	text-decoration: underline;
+	text-align: center;
+}
+.papa0 ,
+.papa1 ,
+.papa2 ,
+.papa3 ,
+.papa4 ,
+.papa5 ,
+.papa6 ,
+.papa7{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr) minmax(80px ,100px);
+	.details{
+		display: flex;
+		flex-direction: column;
+	}
+	.status{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}	
+	padding: 10px 15px 10px 15px;
+	margin-bottom: 5px;
+}
+.social{
+	display: flex;
+	margin-right: 10px;
+	flex-direction: row;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	.socialIcons{
+		font-size: 50px;
+		color: black;
+	}
+}
+.parametr{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	text-wrap: nowrap;
+	ul{
+		list-style: none;
+	}
+	.title1{
+		font-size: 25px;
+		font-weight: 600;
+		white-space: nowrap;
+		word-wrap: break-word;
+	}
+}
+.keywordsText{
+	font-size: 25px;
+	font-weight: 600;
+	white-space: nowrap;
+	word-wrap: break-word;
+}
